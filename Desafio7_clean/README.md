@@ -1,11 +1,27 @@
-# 🐧 Challenges - Penguin Academy
+# 🧩 Challenge 7 – Distributed Logging System
 
-¡Bienvenido a mi repositorio de desafíos de programación!  
-Este repo contiene todos los ejercicios que estoy resolviendo durante mi formación en el curso intensivo de **Penguin Academy**.
+This project implements a **distributed logging system** using Python, Flask, and SQLite.  
+It simulates multiple services generating logs and a central server that authenticates, stores, and serves those logs with query filters.
 
-💻 Aquí encontrarás ejercicios en:
-- Python 🐍
-- C++
+---
 
+## 🚀 Features
 
-Cada desafío representa un paso en mi camino como desarrollador. ¡Este repo es mi cuaderno digital de evolución! 🚀
+- **Multiple simulated services** (`billing`, `users`, `payments`) with unique tokens.
+- **Log submission formats**:
+  - Single JSON object
+  - Array of JSON objects
+  - `{"logs": [ ... ]}` batch
+- **Database persistence** using SQLite with indexes for efficient queries.
+- **Filters** on `service`, `severity`, `timestamp`, `received_at`, plus pagination.
+- **Authentication**: only valid tokens can send logs.
+- **Clear JSON responses** for all requests.
+
+---
+
+## ⚙️ Setup
+
+### 1. Clone this repository
+```bash
+git clone https://github.com/alanriquelmee/Challenges_Penguin.git
+cd Challenges_Penguin/Desafio7
